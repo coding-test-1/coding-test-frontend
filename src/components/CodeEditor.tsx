@@ -1,8 +1,8 @@
-import React from 'react'
-import { useEffect } from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import { useEffect } from "react";
+import ReactDOM from "react-dom";
 
-import Editor, { useMonaco } from '@monaco-editor/react';
+import Editor, { useMonaco } from "@monaco-editor/react";
 
 function CodeEditor() {
   const monaco = useMonaco();
@@ -12,12 +12,11 @@ function CodeEditor() {
     monaco?.languages.typescript.javascriptDefaults.setEagerModelSync(true);
     // or make sure that it exists by other ways
     if (monaco) {
-      console.log('here is the monaco instance:', monaco);
+      console.log("here is the monaco instance:", monaco);
     }
   }, [monaco]);
 
-  return <Editor height="calc(100% - 40px)  " defaultValue="// some comment" defaultLanguage="javascript" />;
-  
+  return <Editor defaultValue="// some comment" defaultLanguage="javascript" />;
 }
 
-export default CodeEditor
+export default CodeEditor;

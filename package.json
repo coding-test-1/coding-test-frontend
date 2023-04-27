@@ -10,16 +10,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@atlaskit/button": "^16.6.0",
+    "@atlaskit/css-reset": "^6.4.0",
+    "@atlaskit/icon": "^21.11.5",
     "@atlaskit/select": "^16.1.8",
+    "@atlaskit/tabs": "^13.3.13",
+    "@atlaskit/theme": "^12.4.1",
+    "@atlaskit/tokens": "^1.2.18",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",
     "@monaco-editor/react": "^4.5.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.1",
+    "http-proxy-middleware": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-split": "^2.0.14"
+    "react-split": "^2.0.14",
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
