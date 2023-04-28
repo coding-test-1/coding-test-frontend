@@ -5,17 +5,22 @@ import Toolbar from "../components/Toolbar";
 import TabsDefaultExample from "../components/CodeResult";
 import ConsoleControl from "../components/ConsoleControl";
 import { token } from "@atlaskit/tokens";
+import QuestionList from "../components/QuestionList";
 
 // import { Toolbar } from '@mui/material';
 function CodingTest() {
-  {fetch("/questions/json")
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.error(error));}
+  {
+    fetch("/questions/json")
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
+  }
 
   return (
     <Split className="splith" gutterSize={6}>
-      <div>Questions</div>
+      <div style={{ display: "flex", flexGrow: 1, overflowY: "auto" }}>
+        <QuestionList />
+      </div>
 
       <Split
         className="split"
